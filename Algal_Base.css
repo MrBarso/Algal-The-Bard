@@ -16,6 +16,7 @@ body {
   }
 
 .header {
+    background-color: aqua;
     font-family: CloisterBlack, Helvetica;
     font-size: 12ch;
     text-align: center;
@@ -23,24 +24,30 @@ body {
     margin-top: 0px;
 }
 
+.main{
+    background-color:beige;
+    padding: 5px;
+}
+
+.image{
+    width: 40%;
+    float: left;
+    padding: 5px;
+}
+
+.middle{
+    width: 20%;
+    float: left;
+    padding: 0px;
+}
+
 .info_bar{
     font-family: CloisterBlack, Helvetica;
     font-size: 4ch;
     margin-top: 2ch;
-    text-align: left;
-    position: absolute;
-    left: 84%;
-    width: 200px;
-    padding: 10px;
+    text-align: center;
 }
 
-.main{
-    padding: 20px;
-}
-
-.image_left{
-    align-items: end;
-}
 
 a {
     text-decoration: solid;
