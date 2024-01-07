@@ -37,12 +37,12 @@ body {
 
 .sl-oval_2 {
     -webkit-overflow-scrolling: touch;
-    height: 20ch;
+    height: 26ch;
     left: 0;
     right:0;
     overflow: hidden;
     position: fixed;
-    bottom: -12ch;
+    bottom: -13ch;
     width: 100%;
     z-index: -1;
 }
@@ -51,7 +51,7 @@ body {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     height: 80%;
-    left: -5%;
+    left: -7.5%;
     position: relative;
     bottom: 0;
     width: 110%;
@@ -108,7 +108,7 @@ body {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    padding: 15px;
+    margin-bottom: 48px;
 }
 
 
