@@ -1,0 +1,64 @@
+body {
+    background-image: url('paperBG.jpg');
+}
+
+@font-face {
+    font-family: 'CloisterBlack';
+      src: url('fonts/CloisterBlack.eot'); /* IE9 Compat Modes */
+      src: url('fonts/CloisterBlack.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('fonts/CloisterBlack.woff2') format('woff2'), /* Super Modern Browsers */
+          url('fonts/CloisterBlack.woff') format('woff'), /* Pretty Modern Browsers */
+          url('fonts/CloisterBlack.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('fonts/CloisterBlack.svg#svgFontName') format('svg'); /* Legacy iOS */
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+  }
+
+.header {
+    font-family: CloisterBlack, Helvetica;
+    font-size: 12ch;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.info_bar{
+    font-family: CloisterBlack, Helvetica;
+    font-size: 4ch;
+    margin-top: 2ch;
+    text-align: left;
+    position: absolute;
+    left: 84%;
+    width: 200px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: solid;
+    text-emphasis-color: black;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black
+}
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
