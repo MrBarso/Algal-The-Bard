@@ -34,6 +34,14 @@ body {
     padding: 10px;
 }
 
+.main{
+    padding: 20px;
+}
+
+.image_left{
+    align-items: end;
+}
+
 a {
     text-decoration: solid;
     text-emphasis-color: black;
