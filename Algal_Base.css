@@ -79,6 +79,16 @@ body {
     text-align: center;
 }
 
+/* subtitle */
+.subtitle {
+    position: fixed;
+    top: 176px;
+    width: 100%;
+    font-family: CloisterBlack, Helvetica;
+    font-size: 7.5ch;
+    text-align: center;
+}
+
 /* container for the three columns */
 .main{
     position: absolute;
@@ -95,11 +105,46 @@ body {
     text-align: center;
 }
 
+.image_left{
+    animation: 1.4s slideInFromLeft;
+    padding: 30px;
+}
+
+.image_right{
+    animation: 1.4s slideInFromRight;
+    padding: 30px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
 /* info bar at the bottom */
 .info_bar{
     padding-top: 1ch;
     font-family: CloisterBlack, Helvetica;
     font-size: 4ch;
+    text-align: center;
+}
+
+.social_bar{
+    padding-top: 1ch;
+    font-family: CloisterBlack, Helvetica;
+    font-size: 1.5ch;
     text-align: center;
 }
 
