@@ -1,54 +1,118 @@
+/* background of the page*/
 body {
-    background-image: url('paperBG.jpg');
+    background-color: rgb(228,220,204);
 }
 
+/* custom font */
 @font-face {
     font-family: 'CloisterBlack';
-      src: url('fonts/CloisterBlack.eot'); /* IE9 Compat Modes */
-      src: url('fonts/CloisterBlack.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-          url('fonts/CloisterBlack.woff2') format('woff2'), /* Super Modern Browsers */
-          url('fonts/CloisterBlack.woff') format('woff'), /* Pretty Modern Browsers */
-          url('fonts/CloisterBlack.ttf')  format('truetype'), /* Safari, Android, iOS */
-          url('fonts/CloisterBlack.svg#svgFontName') format('svg'); /* Legacy iOS */
+      src: url('fonts/CloisterBlack.eot');
+      src: url('fonts/CloisterBlack.eot?#iefix') format('embedded-opentype'),
+          url('fonts/CloisterBlack.woff2') format('woff2'),
+          url('fonts/CloisterBlack.woff') format('woff'),
+          url('fonts/CloisterBlack.ttf')  format('truetype'),
+          url('fonts/CloisterBlack.svg#svgFontName') format('svg');
       font-weight: 700;
       font-style: normal;
       font-display: swap;
   }
 
+.sl-p-dynamic-oval {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.sl-oval {
+    -webkit-overflow-scrolling: touch;
+    height: 30ch;
+    left: -2ch;
+    right: 0;
+    overflow: hidden;
+    position: fixed;
+    top: -2ch;
+    width: 110%;
+    z-index: -1;
+}
+
+.sl-oval_2 {
+    -webkit-overflow-scrolling: touch;
+    height: 20ch;
+    left: 0;
+    right:0;
+    overflow: hidden;
+    position: fixed;
+    bottom: -12ch;
+    width: 100%;
+    z-index: -1;
+}
+
+.sl-oval__inner {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 80%;
+    left: -5%;
+    position: relative;
+    bottom: 0;
+    width: 110%;
+    z-index: -1;
+}
+
+.sl-oval__outer {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 50%;
+    left: -5%;
+    position: relative;
+    top: 0;
+    width: 110%;
+    z-index: -1;
+}
+  
+/* title part */
 .header {
-    background-color: aqua;
+    position: fixed;
+    top: 0px;
+    width: 100%;
     font-family: CloisterBlack, Helvetica;
     font-size: 12ch;
     text-align: center;
-    padding-top: 0px;
-    margin-top: 0px;
 }
 
+/* container for the three columns */
 .main{
-    background-color:beige;
-    padding: 5px;
+    position: absolute;
+    display: flex;
+    top: 32ch;
+    width: 99%;
 }
 
-.image{
-    width: 40%;
-    float: left;
-    padding: 5px;
-}
-
-.middle{
-    width: 20%;
-    float: left;
-    padding: 0px;
-}
-
-.info_bar{
+/* three columns (images + text in the middle */
+.flex_child{
+    flex: 1;
     font-family: CloisterBlack, Helvetica;
-    font-size: 4ch;
-    margin-top: 2ch;
+    font-size: 6ch;
     text-align: center;
 }
 
+/* info bar at the bottom */
+.info_bar{
+    padding-top: 1ch;
+    font-family: CloisterBlack, Helvetica;
+    font-size: 4ch;
+    text-align: center;
+}
 
+/* bottom placing */
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px;
+}
+
+
+/* link style with animations*/
 a {
     text-decoration: solid;
     text-emphasis-color: black;
